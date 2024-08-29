@@ -1,5 +1,6 @@
 # FIUBA-modelos-y-optimizacion
 
+- [📔 Mi notion](https://jordafiuba.notion.site/Modelos-y-optimizacion-I-c30b2910d57641a593275c8a314bd831?pvs=4)
 
 ### Drives:
 - [Drive 1](https://drive.google.com/drive/folders/1dvhqASvafGrSnOguVjGulC9yIFft_ivF)
