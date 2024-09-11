@@ -13,7 +13,7 @@
 ## Clases
 - [Clases](https://docs.google.com/document/d/1QjRMuX-JHnEmKfsM8BTE9M_KJ5ryV6PaPMiFgkDEzio/edit)
 
-## Dependencias
+## Entorno Virtual y dependencias
 🚀 Instalar IBM ILOG CPLEX Optimization Studio
 🚀 Instalar Python 3.10
 En Windows (Powershell:):
