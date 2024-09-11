@@ -10,6 +10,7 @@ En Windows (Powershell:):
     - `YOUR_USER`: Cambiar la variable por tu usuario de windows
 
 ```C:\Users\{YOUR_USER}\AppData\Local\Programs\Python\Python310\python -m venv mo-env```
+- Puede ser que haya permitir que Powershell ejecute scripts ```Set-ExecutionPolicy Unrestricted```
 - Ingresar al enviroment
 ```mo-env\Scripts\activate```
 - Instalar dependencias ```pip install -r requirements.txt```
