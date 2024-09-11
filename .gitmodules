@@ -1,3 +1,6 @@
 [submodule "FIUBA-modelos-y-optimizacion-ejercicios"]
 	path = FIUBA-modelos-y-optimizacion-ejercicios
 	url = https://github.com/santiagojorda/FIUBA-modelos-y-optimizacion-ejercicios.git
+[submodule "ejercicios-optimizacion"]
+	path = ejercicios-optimizacion
+	url = https://github.com/santiagojorda/FIUBA-modelos-y-optimizacion-ejercicios.git
