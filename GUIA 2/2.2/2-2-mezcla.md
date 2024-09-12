@@ -47,7 +47,7 @@ Se trata de un problema de ***mezcla***, donde se extraen minerales de yacimient
 
 - $Y_{SA}, Y_{SC}, Y_{EA}$ (continuas): Cantidad de toneladas extraidas del yacimiento en un mes $\frac{toneladas}{mes}$ 
 
-- $P_A , P_B$ (continuas): Ganancias de venta de aleacioens por tonelada $\frac{\$}{tonelada}$
+- $P_A , P_B$ (continuas): Ganancias de venta de aleaciones por tonelada $ \frac{\$}{tonelada} $
 
 
 
@@ -80,10 +80,12 @@ $$Max(Z) = P_A \frac{A\$}{tonelada} + P_B \frac{B\$}{tonelada} - Y_{SA} \frac{10
 
 ### Recursos
 
-> ⛔🤚🏼 No me sirve que dependa de los metales totales, ya que no los se
-- **Sierra Alta**: $C_{SA} = 20 Cu + 10 Sn + 30 Mg + 10 OT \le 1000 \frac{tonelada}{mes}$ 
-- **Sierra Chica**: $C_{Sc} = 10 Cu + 20 Sn + 30 Mg + 10 OT \le 2000 \frac{tonelada}{mes}$ 
-- **El Abra**: $C_{EA} = 5 Cu + 5 Sn + 70 Mg \le 3000 \frac{tonelada}{mes}$ 
+> ⛔🤚🏼 Esto que plantie esta mal, yo cuando saco una tonelada de un yacimiento, voy a tener una proporcion fija de metales extraidos. <br>
+> Por como esta planteada aca, los porcentajes de cada metal varian en cada extraccion. 
+>
+> **Sierra Alta**: $C_{SA} = 20 Cu + 10 Sn + 30 Mg + 10 OT \le 1000 \frac{tonelada}{mes}$ <br>
+> **Sierra Chica**: $C_{Sc} = 10 Cu + 20 Sn + 30 Mg + 10 OT \le 2000 \frac{tonelada}{mes}$ <br> 
+> **El Abra**: $C_{EA} = 5 Cu + 5 Sn + 70 Mg \le 3000 \frac{tonelada}{mes}$ 
 
 
 
@@ -92,7 +94,8 @@ $$Max(Z) = P_A \frac{A\$}{tonelada} + P_B \frac{B\$}{tonelada} - Y_{SA} \frac{10
 - **Sierra Chica**: $Y_{SC} \le 2000 \frac{toneladas}{mes}$
 - **El Abra**: $Y_{EA} \le 3000 \frac{toneladas}{mes}$
 
-> 💡 Capas sea mejor hacer restricciones en base a los ingredientes utilizados
+> 💡 Capas sea mejor hacer restricciones en base a los ingredientes utilizados <br>
+> Hay ingredientes que se usan en ambos productos, estos los tengo que fraccionar y luego sumar para el total <br>
 - **Obtención de Cobre**: $ 0.2 Y_{SA} + 0.1 Y_{SC} + 0.05 Y_{EA} \ge Cu_{A} $
 - **Obtención de Estaño**: $ 0.1 Y_{SA} + 0.2 Y_{SC} + 0.05 Y_{EA} \ge Sn_{A} + Sn_{B} $
 - **Obtención de Magnesio**: $ 0.3 Y_{SA} + 0.3 Y_{SC} + 0.7 Y_{EA} \ge Mg_{B} $
