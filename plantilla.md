@@ -1,9 +1,9 @@
 ## Analisis
 
 ## Objetivo
-- Que hacer:
-- En cuanto:
-- Para que:
+- **Que hacer**:
+- **En cuanto**:
+- **Para que**:
 
 ## Supuestos
 - 

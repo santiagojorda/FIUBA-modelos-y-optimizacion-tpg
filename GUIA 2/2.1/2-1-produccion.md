@@ -6,9 +6,9 @@ Se trata de un problema de ***produccion***, donde se producen pulloveres de div
 > Los problemas de ***produccion*** se ocupan de la planificación y optimización de los procesos de producción. Estos problemas pueden incluir aspectos como la asignación de recursos, la programación de la producción y la mezcla de ingredientes (que es donde se conecta con los problemas de mezcla).
 
 ## Objetivo
-- Que hacer: Determinar la cantidad de pullovers a fabricar y vender
-- En cuanto: En una semana
-- Para que: Maximizar la ganancia
+- **Que hacer**: Determinar la cantidad de pullovers a fabricar y vender
+- **En cuanto**: En una semana
+- **Para que**: Maximizar la ganancia
 
 ## Supuestos
 - Todo lo que se produce se vende
@@ -25,6 +25,8 @@ Se trata de un problema de ***produccion***, donde se producen pulloveres de div
 Aunque tengo 2 maquinas que hacen un mismo producto (indistinguible), tengo que crear variables que haga referencia de donde viene cada uno => $B_{M1}, B_{M2}$
 
 ## Variables
+> Variables de decision para ***produccion***: Cantidades de productos a producir 
+
 - $A_{M1}, B_{M1}, B_{M2}, C_{M2}$ (continuas): Cantidad de pullovers producido por cada maquina $\frac{pullovers}{semana}$
 
 ## Funcion objetivo
@@ -32,6 +34,7 @@ La idea es maximizar la ganancia por la produccion de productos
  $$ Max(Z) = \frac{10\$}{pullóver} A_{M1} + \frac{15\$}{pullóver} B_{M1} + \frac{15\$}{pullóver} B_{M2} + \frac{18\$}{pullóver} C_{M2} $$
 
 ## Restricciones
+> Restricciones para ***produccion***: Pueden incluir restricciones de capacidad, demanda, etc.
 - Se necesitan producir al menos 10 pulloveres B por semana: $B = B_{m1} + B_{M2} \ge  10 \frac{pulloveres}{semana}$
 
 ### Limite de recursos:
@@ -39,13 +42,13 @@ La idea es maximizar la ganancia por la produccion de productos
 
 >Como cada maquina trabaja en 2 turnos de 8 horas por dia, durante los 5 dias de la semana, entonces trabajan: $2 * 8* 5 = 80 \frac{hs}{semana}$
 
-- Lana mejorada: $L_{M} = 1.6\frac{kg}{pullover} L_{MA} + 1.6\frac{kg}{pullover} L_{MB} + 1.2\frac{kg}{pullover} L_{MC} \le 20 \frac{kg}{semana}$
+- **Lana mejorada**: $L_{M} = 1.6\frac{kg}{pullover} L_{MA} + 1.6\frac{kg}{pullover} L_{MB} + 1.2\frac{kg}{pullover} L_{MC} \le 20 \frac{kg}{semana}$
 
-- Lana normal: $L_{N} = 1.8\frac{kg}{pullover} L_{NB} \le 36 \frac{kg}{semana} $
+- **Lana normal**: $L_{N} = 1.8\frac{kg}{pullover} L_{NB} \le 36 \frac{kg}{semana} $
 
-- Capacidad Productiva Maquina 1: $M1 = 5 \frac{hs}{pullover} A_{M1} + 6\frac{hs}{pullover} B_{M1} \le 80 \frac{hs}{semana}$
+- **Capacidad Productiva Maquina 1**: $M1 = 5 \frac{hs}{pullover} A_{M1} + 6\frac{hs}{pullover} B_{M1} \le 80 \frac{hs}{semana}$
 
-- Capacidad Productiva Maquina 2: $M2 = 4 \frac{hs}{pullover}B_{M2} + 4\frac{hs}{pullover} C_{M2} \le 80 \frac{hs}{semana}$
+- **Capacidad Productiva Maquina 2**: $M2 = 4 \frac{hs}{pullover}B_{M2} + 4\frac{hs}{pullover} C_{M2} \le 80 \frac{hs}{semana}$
 
 ## Resolucion por software - LINDO
 Como tengo todo en funcion de la cantidad de productos por cada maquina, calculo la funcion objetivo
