@@ -1,13 +1,12 @@
 # MO1
-Repo para llevar constancia de código referido a la materia Modelos de Optimización 1
+👋🏼 Repo para llevar constancia de código referido a la materia Modelos de Optimización 1
 
 ## Integrantes
-- Agustin Demicheli 111032
-- Santiago Jorda 102924
-- Estefano Polizzi 110075
-- Nahuel Godoy
-- 
+- Agustin Demicheli (111032)
+- Santiago Jorda (102924)
+- Estefano Polizzi (110075)
 
+## Recursos
 - [💻 Repositorio con material](https://github.com/santiagojorda/FIUBA-modelos-y-optimizacion)
 
 
