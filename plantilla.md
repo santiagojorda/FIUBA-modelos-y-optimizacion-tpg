@@ -1,22 +1,22 @@
 ## Analisis
 
-## Objetivo
+## <br> Objetivo
 - **Que hacer**:
 - **En cuanto**:
 - **Para que**:
 
-## Supuestos
+## <br> Supuestos
 - 
 -
 -
 -
 
-## Variables
+## <br> Variables
 
-## Funcion Objetivo
+## <br> Funcion Objetivo
 $$Max(Z) = $$
 $$Min(Z) = $$
 
-## Restricciones
+## <br> Restricciones
 
-## Resolucion por software
+## <br> Resolucion por software

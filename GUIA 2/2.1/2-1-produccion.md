@@ -5,35 +5,35 @@ Se trata de un problema de ***produccion***, donde se producen pulloveres de div
 
 > Los problemas de ***produccion*** se ocupan de la planificación y optimización de los procesos de producción. Estos problemas pueden incluir aspectos como la asignación de recursos, la programación de la producción y la mezcla de ingredientes (que es donde se conecta con los problemas de mezcla).
 
-## Objetivo
+## <br> Objetivo
 - **Que hacer**: Determinar la cantidad de pullovers a fabricar y vender
 - **En cuanto**: En una semana
 - **Para que**: Maximizar la ganancia
 
-## Supuestos
+## <br> Supuestos
 - Todo lo que se produce se vende
 - No hay perdida de recursos
 - No hay stock inicial
 - La venta de pulloveres en una semana puede ser fraccionada (variables continuas) 
 - Tengo suficiente mano de obra, capital
-- No contemplamos gastos de enrgia / empleados
+- Los gastos de energia estan cubiertos externamente
 - Calidades indistinguibles - Las calidades de las prendas B generadas en la ambas maquians son iguales
 - No hay fallas de produccion
 - El cambio de tipo de lana para producir otro pullover no pierdo tiempo o ese tiempo esta incluido en el tiempo de produccion del pullover
 
-## Consideraciones
+## <br> Consideraciones
 Aunque tengo 2 maquinas que hacen un mismo producto (indistinguible), tengo que crear variables que haga referencia de donde viene cada uno => $B_{M1}, B_{M2}$
 
-## Variables
+## <br> Variables
 > Variables de decision para ***produccion***: Cantidades de productos a producir 
 
 - $A_{M1}, B_{M1}, B_{M2}, C_{M2}$ (continuas): Cantidad de pullovers producido por cada maquina $\frac{pullovers}{semana}$
 
-## Funcion objetivo
+## <br> Funcion objetivo
 La idea es maximizar la ganancia por la produccion de productos
  $$ Max(Z) = \frac{10\$}{pullóver} A_{M1} + \frac{15\$}{pullóver} B_{M1} + \frac{15\$}{pullóver} B_{M2} + \frac{18\$}{pullóver} C_{M2} $$
 
-## Restricciones
+## <br> Restricciones
 > Restricciones para ***produccion***: Pueden incluir restricciones de capacidad, demanda, etc.
 - Se necesitan producir al menos 10 pulloveres B por semana: $B = B_{m1} + B_{M2} \ge  10 \frac{pulloveres}{semana}$
 
@@ -50,7 +50,7 @@ La idea es maximizar la ganancia por la produccion de productos
 
 - **Capacidad Productiva Maquina 2**: $M2 = 4 \frac{hs}{pullover}B_{M2} + 4\frac{hs}{pullover} C_{M2} \le 80 \frac{hs}{semana}$
 
-## Resolucion por software - LINDO
+## <br> Resolucion por software - LINDO
 Como tengo todo en funcion de la cantidad de productos por cada maquina, calculo la funcion objetivo
 
 ```

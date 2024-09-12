@@ -8,7 +8,7 @@ Se trata de un problema de ***mezcla***, donde se extraen minerales de yacimient
 
 
 
-## Objetivo
+## <br> Objetivo
 - **Que hacer**: Determinar la cantidad de toneladas de $A$ y de $B$
 - **En cuanto**: En un periodo determinado (supongo que es mes)
 - **Para que**: Para maximizar las ganancias
@@ -16,11 +16,11 @@ Se trata de un problema de ***mezcla***, donde se extraen minerales de yacimient
 
 
 
-## Supuestos
+## <br> Supuestos
 - El porcertaje de los metales en los minerales extraidos de una mina siempre son iguales 
 - No hay inflacion
 - No hay restriccion de mano de obra ni financiera
-- Los gastos de energia los tengo contemplados externamente y estan cubiertos
+- Los gastos de energia estan cubiertos externamente
 - Se vende todo lo que se produce 
 - No hay inflacion ni variacion de precios
 - No hay restriccion de mano de obra ni financiera
@@ -33,7 +33,7 @@ Se trata de un problema de ***mezcla***, donde se extraen minerales de yacimient
 
 
 
-## Variables
+## <br> Variables
 > Variables de decision para ***mezcla***: Proporciones de los ingredientes
 
 - $Cu, Sn, Mg, Zn, OT$ (continuas): Toneladas de metales extraidos en un mes $\frac{toneladas}{mes}$
@@ -52,23 +52,24 @@ Se trata de un problema de ***mezcla***, donde se extraen minerales de yacimient
 
 
 
-## Funcion Objetivo
+## <br> Funcion Objetivo
 > Como estas dos variables $P_A, P_B$ no estan inicializadas, creeria que en el futuro las voy a suponer <br>
-> Todo lo que sea dinero se agrega de termino en la funcion objetivo
+> Todo lo que sea dinero se agrega de termino en la funcion objetivo <br>
+> Las variables son las variables de desicion!
 
 $$Max(Z) = P_A \frac{A\$}{tonelada} + P_B \frac{B\$}{tonelada} - Y_{SA} \frac{10\$}{tonelada} - Y_{SC} \frac{40\$}{tonelada} - Y_{EA} \frac{50\$}{tonelada} $$
 
 
 
 
-## Restricciones
+## <br> Restricciones
 > Restricciones para ***mezcla***: Principalmente relacionadas con las   características del producto final
 
 #### Porcentajes de aleacion de A
 - $ A = Cu_A + Sn_A + Zn_A $
-- $ 0.8 A \ge C_{A} $
-- $ 0.3 A \ge E_{A} $
-- $ 0.5 A \le Z_{A} $
+- $ 0.8 A \ge C_{A} $ esto se traduce como $ 0.8(Cu_A + Sn_A + Zn_A) \ge C_{A}$
+- $ 0.3 A \ge Sn_{A} $ esto se traduce como $ 0.3(Cu_A + Sn_A + Zn_A) \ge Sn_{A}$
+- $ 0.5 A \le Z_{A} $ esto se traduce como $ 0.5(Cu_A + Sn_A + Zn_A) \le Z_{A}$
 
 #### Porcentajes de aleacion de B
 - $ B = Cu_B + Sn_B + Zn_B $
@@ -105,4 +106,4 @@ $$Max(Z) = P_A \frac{A\$}{tonelada} + P_B \frac{B\$}{tonelada} - Y_{SA} \frac{10
 
 
 
-## Resolucion por software
+## <br> Resolucion por software
