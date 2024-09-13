@@ -82,11 +82,11 @@ $$Max(Z) = P_A \frac{A\$}{tonelada} + P_B \frac{B\$}{tonelada} - Y_{SA} \frac{10
 ### Recursos
 
 > ⛔🤚🏼 Esto que plantie esta mal, yo cuando saco una tonelada de un yacimiento, voy a tener una proporcion fija de metales extraidos. <br>
-> Por como esta planteada aca, los porcentajes de cada metal varian en cada extraccion. 
+> Por como esta planteada aca, los porcentajes de cada metal varian sin nrestriccion. 
 >
-> **Sierra Alta**: $C_{SA} = 20 Cu + 10 Sn + 30 Mg + 10 OT \le 1000 \frac{tonelada}{mes}$ <br>
-> **Sierra Chica**: $C_{Sc} = 10 Cu + 20 Sn + 30 Mg + 10 OT \le 2000 \frac{tonelada}{mes}$ <br> 
-> **El Abra**: $C_{EA} = 5 Cu + 5 Sn + 70 Mg \le 3000 \frac{tonelada}{mes}$ 
+> **Sierra Alta**: $C_{SA} = 20 Cu + 10 Sn + 30 Mg + 10 OT = 1000 \frac{tonelada}{mes}$ <br>
+> **Sierra Chica**: $C_{Sc} = 10 Cu + 20 Sn + 30 Mg + 10 OT = 2000 \frac{tonelada}{mes}$ <br> 
+> **El Abra**: $C_{EA} = 5 Cu + 5 Sn + 70 Mg = 3000 \frac{tonelada}{mes}$ 
 
 
 
@@ -97,10 +97,10 @@ $$Max(Z) = P_A \frac{A\$}{tonelada} + P_B \frac{B\$}{tonelada} - Y_{SA} \frac{10
 
 > 💡 Capas sea mejor hacer restricciones en base a los ingredientes utilizados <br>
 > Hay ingredientes que se usan en ambos productos, estos los tengo que fraccionar y luego sumar para el total <br>
-- **Obtención de Cobre**: $ 0.2 Y_{SA} + 0.1 Y_{SC} + 0.05 Y_{EA} \ge Cu_{A} $
-- **Obtención de Estaño**: $ 0.1 Y_{SA} + 0.2 Y_{SC} + 0.05 Y_{EA} \ge Sn_{A} + Sn_{B} $
-- **Obtención de Magnesio**: $ 0.3 Y_{SA} + 0.3 Y_{SC} + 0.7 Y_{EA} \ge Mg_{B} $
-- **Obtención de Zinc**: $ 0.3 Y_{SA} + 0.3 Y_{SC} + 0.2 Y_{EA} \ge Zn_{A} + Zn_{B} $
+- **Obtención de Cobre**: $ 0.2 Y_{SA} + 0.1 Y_{SC} + 0.05 Y_{EA} = Cu_{A} $
+- **Obtención de Estaño**: $ 0.1 Y_{SA} + 0.2 Y_{SC} + 0.05 Y_{EA} = Sn_{A} + Sn_{B} $
+- **Obtención de Magnesio**: $ 0.3 Y_{SA} + 0.3 Y_{SC} + 0.7 Y_{EA} = Mg_{B} $
+- **Obtención de Zinc**: $ 0.3 Y_{SA} + 0.3 Y_{SC} + 0.2 Y_{EA} = Zn_{A} + Zn_{B} $
 
 
 
