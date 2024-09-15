@@ -6,7 +6,8 @@
 - Santiago Jorda (102924)
 - Estefano Polizzi (110075)
 - Nahuel Josue Godoy (100225)
-
+- Ariel Rodrigo Salazar Lopez (110278)
+  
 ## Recursos
 - [💻 Repositorio con material](https://github.com/santiagojorda/FIUBA-modelos-y-optimizacion)
 
