@@ -5,6 +5,7 @@
 - Agustin Demicheli (111032)
 - Santiago Jorda (102924)
 - Estefano Polizzi (110075)
+- Nahuel Josue Godoy (100225)
 
 ## Recursos
 - [💻 Repositorio con material](https://github.com/santiagojorda/FIUBA-modelos-y-optimizacion)
