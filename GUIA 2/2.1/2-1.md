@@ -42,9 +42,9 @@ La idea es maximizar la ganancia por la produccion de productos
 
 >Como cada maquina trabaja en 2 turnos de 8 horas por dia, durante los 5 dias de la semana, entonces trabajan: $2 * 8* 5 = 80 \frac{hs}{semana}$
 
-- **Lana mejorada**: $L_{M} = 1.6\frac{kg}{pullover} L_{MA} + 1.6\frac{kg}{pullover} L_{MB} + 1.2\frac{kg}{pullover} L_{MC} \le 20 \frac{kg}{semana}$
+- **Lana mejorada**: $L_{M} = 1.6\frac{kg}{pullover} L_{MA} + 1.2\frac{kg}{pullover} L_{MC} \le 20 \frac{kg}{semana}$
 
-- **Lana normal**: $L_{N} = 1.8\frac{kg}{pullover} L_{NB} \le 36 \frac{kg}{semana} $
+- **Lana normal**: $L_{N} = 1.8\frac{kg}{pullover} L_{NA} +  1.8\frac{kg}{pullover} L_{NB}  \le 36 \frac{kg}{semana} $
 
 - **Capacidad Productiva Maquina 1**: $M1 = 5 \frac{hs}{pullover} A_{M1} + 6\frac{hs}{pullover} B_{M1} \le 80 \frac{hs}{semana}$
 
@@ -79,6 +79,7 @@ Se logro la maximizacion en $MAX(z) = 550$
 
 Como suponiamos que se podrian vender pulloveres de forma fraccionada
 vemos que se lograron producir y vender:
+La demanda es de B = 10, esta se cumple ademas de tener mas produccion
 
 ### Pulloveres:
 - A: 0
@@ -87,3 +88,7 @@ vemos que se lograron producir y vender:
 ### Produccion:
 - Maquina 1: 13,333 pulloveres
 - Maquina 2: 20,000 pulloveres
+
+---
+ver de nuevo este problema
+ver ejercicio de empleados -> con los beneficios de 10%
