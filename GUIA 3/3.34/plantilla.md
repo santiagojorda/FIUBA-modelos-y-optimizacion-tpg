@@ -12,6 +12,8 @@
 - El personal es siempre el mismo, no hay despidos y nuevos empleados 
 - Un equipo no puede trabajar en 2 edificios al mismo tiempo
 - No hay retrasos en el trabajo de cada equipo
+- La caja no puede tener un saldo negativo
+- La venta se percibe al inicio del mes
 
 
 
@@ -59,4 +61,10 @@ $$Min(Z) = FINAL$$
 ### Financiacion
 - $D_{0} = X$
 
+---
+> ver
+> 
+> exceso y egreso
+> 
+> costo beneficio
 
