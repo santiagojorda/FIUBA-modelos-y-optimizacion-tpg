@@ -22,19 +22,62 @@ El papel diario es brindado por los clientes.
 Cada persona que hace el trabajo manual de doblar los diarios puede hacer CS por hora. La máquina 1 puede doblar hasta DD por hora y la máquina 2 puede trabajar 100 horas por mes. Necesita que un solo operador esté a cargo.
 Los fletes pueden transportar hasta 4000 diarios al mismo precio de antes
 
+
+## 3. Control de Calidad
+
+La papalera enfrenta desafíos de calidad debido a defectos generados por el uso de maquinaria, lo que requiere un proceso adicional de reparación para mantener los estándares del producto.
+Un porcentaje fijo de los sobres producidos por la máquina son rechazados debido a defectos y deben ser reparados, lo que genera costos adicionales en términos de tiempo y dinero $CR.
+
+<div style="page-break-after: always;"></div>
+
 # Resultados caso base
+## Analisis
+## Hipotesis
+## Variables
+## Funcion Objetivo
+## Restricciones
+## Resultados
 ![resultado_variables](caso_base/resultado_variables.png)
 ![resultado_restricciones](caso_base/resultado_restricciones.png)
 ![produccion](caso_base/produccion.png)
 ![porcentajes](caso_base/porcentajes_costos.png)
 
+<div style="page-break-after: always;"></div>
+
 # Resultado segundo caso
+## Analisis
+## Hipotesis
+## Variables
+## Funcion Objetivo
+## Restricciones
+## Resultados
 ![resultado_variables](caso_dos/resultado_variables.png)
 ![resultado_restricciones](caso_dos/resultado_restricciones.png)
 ![produccion](caso_dos/produccion.png)
 ![porcentajes](caso_dos/porcentajes_costos.png)
 
+<div style="page-break-after: always;"></div>
+
 # Resultado tercer caso
+## Analisis
+Se agrega
+## Hipotesis
+## Variables
+- $R_m$: Sobres rechazados por maquina
+- $H_{rs}$: Horas invertidas en reparacion por maquina
+## Constantes
+- $C_{rs}$: Costo de reparacion sobre
+- $PR_{M1}$: Porcentaje de rechazo
+- $REP_{hr}$: Cantidad de reparacion por hora
+## Restricciones
+### Consumo Maquina
+- Consumo: R_m = P_{A} * PR_{M1}
+### Rechazo Maquinas
+- Rechazo: $R_m = H_{rs} * REP_{hr}$
+### Costos reparacion
+- Costo reparacion: $C_{rep} = R_m * C_{rs}$
+- Costo total: $C_{total} = C_{mp} + C_{he} + C_{co} + C_{tr} + C_{rs}$
+## Resultados
 ![resultado_variables](caso_tres/resultado_variables.png)
 ![resultado_restricciones](caso_tres/resultado_restricciones.png)
 ![produccion](caso_tres/produccion.png)
