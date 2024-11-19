@@ -21,7 +21,6 @@ PRECIO_VENTA = {
 }
 
 # Recursos
-
 PRECIO_TINTA = 10 # por litro: 10
 TINTA_DIARIO = 0.5 # cuantos litros se neceistan para un diario: 0.5
 
