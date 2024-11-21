@@ -28,6 +28,9 @@ Los fletes pueden transportar hasta 4000 diarios al mismo precio de antes
 La papalera enfrenta desafíos de calidad debido a defectos generados por el uso de maquinaria, lo que requiere un proceso adicional de reparación para mantener los estándares del producto.
 Un porcentaje fijo de los sobres producidos por la máquina son rechazados debido a defectos y deben ser reparados, lo que genera costos adicionales en términos de tiempo y dinero $CR.
 
+<br>
+<br>
+<br>
 <div style="page-break-after: always;"></div>
 
 # Informe caso base
@@ -154,11 +157,14 @@ Donde los **ingresos** y **costos** son:
    \text{Horas Extra} \leq \text{Máximo Horas Extra Personal}
    $$
 ## Resultados
-![resultado_variables](caso_base/resultado_variables.png)
-![resultado_restricciones](caso_base/resultado_restricciones.png)
+![resultado_variables](caso_base/resultados.png)
+![resultado_restricciones](caso_base/sensibilidad.png)
 ![produccion](caso_base/produccion.png)
 ![porcentajes](caso_base/porcentajes_costos.png)
 
+<br>
+<br>
+<br>
 <div style="page-break-after: always;"></div>
 
 # Informe segundo caso
@@ -224,11 +230,14 @@ Se agregó el servicio $Diarios$ el cual utiliza recursos tinta cuyo costo es $P
 ## Resultados
 Lo que sucedió en este caso fue que se obtuvo una mayor ganancia debido a que es más rentable la venta de producir y vender diarios antes que tener una mayor capacidad ociosa ya que se les paga a los trabajadores por no hacer nada.
 
-![resultado_variables](caso_dos/resultado_variables.png)
-![resultado_restricciones](caso_dos/resultado_restricciones.png)
+![resultado_variables](caso_dos/resultados.png)
+![resultado_restricciones](caso_dos/sensibilidad.png)
 ![produccion](caso_dos/produccion.png)
 ![porcentajes](caso_dos/porcentajes_costos.png)
 
+<br>
+<br>
+<br>
 <div style="page-break-after: always;"></div>
 
 # Informe tercer caso
@@ -248,25 +257,65 @@ Lo que sucedió en este caso fue que se obtuvo una mayor ganancia debido a que e
 - Costo reparacion: $C_{rep} = R_m * C_{rs}$
 - Costo total: $C_{total} = C_{mp} + C_{he} + C_{co} + C_{tr} + C_{rs}$
 ## Resultados
-![resultado_variables](caso_tres/resultado_variables.png)
-![resultado_restricciones](caso_tres/resultado_restricciones.png)
+![resultado_variables](caso_tres/resultados.png)
+![resultado_restricciones](caso_tres/sensibilidad.png)
 ![produccion](caso_tres/produccion.png)
 ![porcentajes](caso_tres/porcentajes_costos.png)
 
+<br>
+<br>
+<br>
+<br>
+<br>
 
-
----
 # Analisis de Sensibilidad 
 
-```
-4: ¿Resultará conveniente vender CANT_HORAS reducir horas hombre por un precio de PRECIO$?
-```
+## ¿A cuanto comprarias 100 horas de maquina?
+Vemos que el marginal de horas maquina es de $10.157,14 y esta dentro del rango por lo que pagaria como maximo $1.015,74
 
+## ¿A cuantos venderia una unidad de hora extra?
+En este caso las horas extra estan sobrando por lo que podria venderlo a cualquier precio
 
+## ¿Conviene comprar 150 horas maquina por $1.600.000?
+Como vemos en la tabla, podemos a lo mucho hacer rendir esas 150 por $1.523.571 por lo que no seria rentable el negocio
 
-9: ¿Cuánto pagaría por poder fabricar y vender 7  unidades menos del producto 
-3? Justifique claramente su respuesta.
+## ¿Cuánto pagaría por realizar 100.000 etiquetados mas?
+Poder aumentar cada etiquetado me aumenta el funcional 1.43$, si tuviera que hacer 100.000 unidades mas, no pagaria mas de 143.000$ para obtenerlos, porque si pago mas, estaria perdiendo 
 
-19:  ¿Qué  pasa  si  el  coeficiente  de  X2  en  el  funcional  disminuye  en  $3?  
-Justifique  claramente  su  respuesta.  Si  considera  que  le  falta  información  indicar  qué 
-información le falta y qué situaciones se pueden presentar
+## ¿Qué  pasa  si  el  coeficiente  de  produccion de ensobrados en  el  funcional  disminuye  en  1.5$?
+El limite lim inferior del coeficiente de produccion de ensobrado es de 1.17$, al pasar este limite, lo que pasa es que el funcion objetivo cambia. 
+
+## ¿Cuánto pagaría por dos unidades más de horas maquina?
+El dual price asociado a las horas máquina (Restricción 8) es 0.1875. Entonces por cada unidad adicional de horas máquina, el beneficio incrementaría en $0.1875.
+
+Por dos unidades más de horas máquina:
+  2×0.1875=0.375
+El incremento en el beneficio sería $0.375, podria pagarse por incremento si el precio es menor o igual a 0.375-m.
+
+## ¿Qué pasa si el coeficiente de etiquetado en el funcional disminuye en $3?
+Justifique claramente su respuesta. Si considera que le falta información indicar qué
+información le falta y qué situaciones se pueden presentar.
+
+Como falta informacion sobre los limites de variacion del coeficiente objetivo, hay dos posibles situaciones:
+- Si la disminucion esta dentro del rango entonces el modelo sigue siendo optimo, pero el beneficio disminuye en proporcion.
+- Si excede el rango, entonces se puede generar una nueva solucion optima que afecte al plan de produccion.
+
+## ¿Qué pasa si aumentamos el precio de ensobrado de $3.20 a $5?
+
+  Como el ensobrado ya está en el máximo nivel de producción, el incremento no va a cambiar la solución actual, pero el beneficio va a aumentar. 
+  La diferencia de precio es de 5 - 3,20 = 1,80
+  Entonces el beneficio aumentaria en 240.000 (produccion actual) x 1,80 = 432.000 (lo que beneficio aumenta)
+
+## ¿Qué pasa si agregamos una demanda mínima para el producto Ensobrado de 2 unidades? 
+- CASO BASE:
+  
+No sucederia nada ya que se agrega es un servicio que se vende.
+- CASO 2: Idem
+- CASO 3: idem
+
+## ¿Qué pasa si agregamos una demanda máxima para el producto Ensobrado de 3000 unidades? ¿Y si reducimos la demanda maxima a 0?
+- CASO BASE:
+  
+El funcional incrementa en 3000 unidades * coeficiente de ensobrado por unidad, en el caso de que se reduzca la demanda maxima a cero, cambiaría el funcional aunque no se tienen valores de cuanto podria perder en dicho rango ya que es justamente el limite del rango vender 0 unidades de Ensobrado
+- CASO 2: idem 
+- CASO 3: idem
