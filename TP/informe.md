@@ -257,4 +257,16 @@ Lo que sucedió en este caso fue que se obtuvo una mayor ganancia debido a que e
 
 ---
 # Analisis de Sensibilidad 
- 
+
+```
+4: ¿Resultará conveniente vender CANT_HORAS reducir horas hombre por un precio de PRECIO$?
+```
+
+
+
+9: ¿Cuánto pagaría por poder fabricar y vender 7  unidades menos del producto 
+3? Justifique claramente su respuesta.
+
+19:  ¿Qué  pasa  si  el  coeficiente  de  X2  en  el  funcional  disminuye  en  $3?  
+Justifique  claramente  su  respuesta.  Si  considera  que  le  falta  información  indicar  qué 
+información le falta y qué situaciones se pueden presentar
