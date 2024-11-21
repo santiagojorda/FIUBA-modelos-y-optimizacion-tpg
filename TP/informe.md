@@ -252,3 +252,9 @@ Lo que sucedió en este caso fue que se obtuvo una mayor ganancia debido a que e
 ![resultado_restricciones](caso_tres/resultado_restricciones.png)
 ![produccion](caso_tres/produccion.png)
 ![porcentajes](caso_tres/porcentajes_costos.png)
+
+
+
+---
+# Analisis de Sensibilidad 
+ 
