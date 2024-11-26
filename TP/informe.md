@@ -8,8 +8,8 @@
 
 ## 1. Papeleria Godoy SRL
 
-La familia Godoy se dedica hace 30 años al rubro de la papelería,  cuenta con una fábrica en la que elaboran 2 productos, sobres y etiquetas,  la papelería contrató a X trabajadores, los cuales trabajan de lunes a sábados con turnos de 8 HS/DÍA, además cuenta con una máquina M1 que se dedica al doblado de las hojas. Esta cuenta con una disponibilidad de H horas máquina, para evitar de esta manera un costoso mantenimiento constantemente.
-Los recursos se obtienen de dos fuentes, del cliente quien proveerá la materia prima para realizar el trabajo solicitado y además un mayorista de papel y cartón, el cual vende por lotes de 100 cajas a un costo de $C y 100 sobres por $S.
+La familia Godoy se dedica hace 30 años al rubro de la papelería,  cuenta con una fábrica en la que elaboran 2 productos, sobres y etiquetas,  la papelería contrató a 13 trabajadores, los cuales trabajan de lunes a sábados con turnos de 8 HS/DÍA, además cuenta con una máquina M1 que se dedica al doblado de las hojas. Esta cuenta con una disponibilidad de H horas máquina, para evitar de esta manera un costoso mantenimiento constantemente.
+Los recursos se obtienen de dos fuentes, del cliente quien proveerá la materia prima para realizar el trabajo solicitado
 Cada persona dedicada a producir sobres demora HS en hacer 1500 sobres, y HE para hacer 2000 etiquetas. Por otro lado, las máquinas funcionan de manera mucho más eficiente demorando HM1 en hacer 10000 sobres Con lo indicado.
 Se utilizan fletes para entregar los sobres terminados, cada encomienda puede transportar 7000 de los mismos, y este posee un precio de $CT
  ¿Qué sería lo mejor que puede hacer la familia Godoy?
@@ -19,8 +19,8 @@ Se utilizan fletes para entregar los sobres terminados, cada encomienda puede tr
 La papelera Godoy quiere agregar a su producción la producción de diario personalizados. Se utilizará la máquina M1 para el doblado del papel, y deciden utilizar una vieja máquina de impresión M2 que tenían guardada. 
 Por cada diario se utilizan ML mililitros de tinta. La tinta se compra en el mayorista por litro a un precio de $CTIN
 El papel diario es brindado por los clientes.
-Cada persona que hace el trabajo manual de doblar los diarios puede hacer CS por hora. La máquina 1 puede doblar hasta DD por hora y la máquina 2 puede trabajar 100 horas por mes. Necesita que un solo operador esté a cargo.
-Los fletes pueden transportar hasta 4000 diarios al mismo precio de antes
+Cada persona que hace el trabajo manual de doblar los diarios puede hacer CS por hora. La máquina 2 puede doblar hasta DD por hora y la máquina 2 puede trabajar 48 horas por mes. Necesita que un solo operador esté a cargo.
+Los fletes pueden transportar hasta 6000 diarios al mismo precio de antes
 
 
 ## 3. Control de Calidad
@@ -35,7 +35,7 @@ Un porcentaje fijo de los sobres producidos por la máquina son rechazados debid
 
 # Informe caso base
 
-## Análisis
+## Objetivo
 
 El objetivo es determinar la cantidad a admitir de ensobrado y etiquetado, buscando maximizar el beneficio de producción en un mes.
 
@@ -126,25 +126,25 @@ Donde los **ingresos** y **costos** son:
 2. **Consumo de Recursos**:
    - **Cajas**:
      $$
-     \text{Capacidad Caja}_{servicio} \cdot \text{Cantidad Cajas}_{servicio} = \text{Producido}_{servicio}, \quad \forall \, servicio
+     \text{Capacidad Caja}_{servicio} \cdot \text{Cantidad Cajas}_{servicio} \geq \text{Producido}_{servicio}, \quad \forall \, servicio
      $$
    - **Máquina**:
      $$
-     \text{Producción Máquina}_A \cdot \text{Horas Máquina} = \text{Producido}_A
+     \text{Producción Máquina}_A \cdot \text{Horas Máquina} \geq \text{Producido}_A
      $$
      $$
      \text{Horas Máquina} \leq \text{Límite Horas Máquina}_A
      $$
    - **Horas de Producción**:
      $$
-     \text{Producción por Hora}_{servicio} \cdot \text{Horas de Producción}_{servicio} = \text{Producido}_{servicio}, \quad \forall \, servicio
+     \text{Producción por Hora}_{servicio} \cdot \text{Horas de Producción}_{servicio} \geq \text{Producido}_{servicio}, \quad \forall \, servicio
      $$
      $$
      \text{Horas de Producción Totales} = \text{Horas de Producción}_A + \text{Horas de Producción}_B
      $$
    - **Traslados**:
      $$
-     \text{Capacidad Traslado}_A \cdot \text{Cantidad Traslados} = \text{Producido}_A
+     \text{Capacidad Traslado}_A \cdot \text{Cantidad Traslados} \geq \text{Producido}_A
      $$
 
 3. **Restricciones Horarias**:
