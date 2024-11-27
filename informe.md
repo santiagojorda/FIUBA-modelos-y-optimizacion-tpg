@@ -155,6 +155,7 @@ Donde los **ingresos** y **costos** son:
 ![sensibilidad](caso_base/sensibilidad2.png)
 ![produccion](caso_base/produccion.png)
 ![porcentajes](caso_base/porcentajes_costos.png)
+![valor marginal](caso_base/valor_marginal_lim_h_maquina.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -248,6 +249,8 @@ Lo que sucedió en este caso fue que se obtuvo una mayor ganancia debido a que e
 
 ![resultado_variables](caso_dos/resultado_variables.png)
 ![resultado_restricciones](caso_dos/resultado_restricciones.png)
+![sensibilidad](caso_dos/sensibilidad.png)
+![sensibilidad](caso_dos/sensibilidad2.png)
 ![produccion](caso_dos/produccion.png)
 ![porcentajes](caso_dos/porcentajes_costos.png)
 
@@ -284,6 +287,8 @@ claramente su respuesta.
 ## Resultados
 ![resultado_variables](caso_tres/resultado_variables.png)
 ![resultado_restricciones](caso_tres/resultado_restricciones.png)
+![sensibilidad](caso_tres/sensibilidad.png)
+![sensibilidad](caso_tres/sensibilidad2.png)
 ![produccion](caso_tres/produccion.png)
 ![porcentajes](caso_tres/porcentajes_costos.png)
 # Analisis de sensibilidad 
