@@ -1,4 +1,0 @@
-matplotlib
-docplex
-cplex
-ipykernel
