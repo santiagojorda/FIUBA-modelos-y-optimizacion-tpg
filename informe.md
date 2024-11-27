@@ -52,32 +52,32 @@ El objetivo es determinar la cantidad a admitir de ensobrado y etiquetado, busca
 
 Las variables del modelo:
 
-- $Producido\ servicio$: Cantidad de unidades producidas de cada servicio.
-- $Cantidad\ Cajas\ A\ Comprar\ Para\ servicio$: Cantidad de cajas necesarias para cada servicio.
-- $Consumo\ horas\ produccion\ de\ servicio$: Horas necesarias para la producción de cada servicio.
-- $Consumo\ horas\ maquina$: Horas de uso de la máquina.
-- $Horas\ Extra$: Horas adicionales de trabajo necesarias.
-- $Horas\ Sobrantes$: Horas sobrantes de producción que no se utilizan.
-- $Cantidad\ de\ Traslados$: Cantidad de traslados necesarios para transportar el producto.
+- $Producido\ servicio$: Cantidad de unidades producidas de cada servicio. [unidades/mes]
+- $Cantidad\ Cajas\ A\ Comprar\ Para\ servicio$: Cantidad de cajas necesarias para cada servicio. [cajas/servicio]
+- $Consumo\ horas\ produccion\ de\ servicio$: Horas necesarias para la producción de cada servicio. [horas/mes]
+- $Consumo\ horas\ maquina$: Horas de uso de la máquina .[horas/mes]
+- $Horas\ Extra$: Horas adicionales de trabajo necesarias.[horas/mes]
+- $Horas\ Sobrantes$: Horas sobrantes de producción que no se utilizan. [horas/mes]
+- $Cantidad\ de\ Traslados$: Cantidad de traslados necesarios para transportar el producto. [traslados/mes]
 
 Siendo $Servicio$: ${Ensobrado,Etiquetado}$
 
 ## Constantes
 
-- $LIMITES\ PRODUCCION\ servicio$: Límite de producción de cada servicio.
-- $CAPACIDAD\ CAJA\ servicio$: Capacidad de cajas para cada servicio.
-- $PRODUCCION\ MAQUINA_A$: Cantidad de producción de máquina para el servicio A.
-- $LIMITE\ HORAS\ MAQUINA_A$: Límite de horas de máquina disponibles para el servicio A.
-- $PRODUCCION\ HORA\ servicio$: Cantidad de producción por hora de cada servicio.
-- $PERSONAL\ NECESARIO\ MAQUINA_A$: Personal necesario para el uso de la máquina para el servicio A.
-- $LIMITE\ HORAS\ HOMBRE$: Límite de horas hombre disponibles.
-- $MAXIMO\ HORAS\ EXTRA\ PERSONAL$: Límite máximo de horas extra disponibles para el personal.
-- $CAPACIDAD\ TRASLADO\ A$: Capacidad de traslado del servicio A.
-- $PRECIO\ VENTA\ SERVICIO$: Precio de venta de cada servicio.
-- $PRECIO\ CAJAS$: Precio por caja utilizada en la producción de cada servicio.
-- $PRECIO\ HORA\ EXTRA$: Precio por hora extra de trabajo.
-- $PRECIO\ TRANSLADO_A$: Precio por traslado del servicio A.
-- $COSTO\ FIJO$: Costo fijos.
+- $LIMITES\ PRODUCCION\ servicio$: Límite de producción de cada servicio. [unidades/mes]
+- $CAPACIDAD\ CAJA\ servicio$: Capacidad de cajas para cada servicio.  [unidades/caja]
+- $PRODUCCION\ MAQUINA_A$: Cantidad de producción de máquina para el servicio A. [unidades/horas]
+- $LIMITE\ HORAS\ MAQUINA_A$: Límite de horas de máquina disponibles para el servicio A. [horas/mes]
+- $PRODUCCION\ HORA\ servicio$: Cantidad de producción por hora de cada servicio. [unidades/hora]
+- $PERSONAL\ NECESARIO\ MAQUINA_A$: Personal necesario para el uso de la máquina para el servicio A. 
+- $LIMITE\ HORAS\ HOMBRE$: Límite de horas hombre disponibles. [horas/mes]
+- $MAXIMO\ HORAS\ EXTRA\ PERSONAL$: Límite máximo de horas extra disponibles para el personal. [horas/mes]
+- $CAPACIDAD\ TRASLADO\ A$: Capacidad de traslado del servicio A. [unidades/traslado]
+- $PRECIO\ VENTA\ SERVICIO$: Precio de venta de cada servicio. [$/unidad]
+- $PRECIO\ CAJAS$: Precio por caja utilizada en la producción de cada servicio.  [$/caja]
+- $PRECIO\ HORA\ EXTRA$: Precio por hora extra de trabajo.  [$/hora]
+- $PRECIO\ TRANSLADO_A$: Precio por traslado del servicio A.  [$/traslado]
+- $COSTO\ FIJO$: Costo fijos. [$/mes]
 
 
 ## Función Objetivo
@@ -200,24 +200,24 @@ Se agregó un tercer servicio que se produce y vende $Diarios$, el cual introduc
 
 ## Variables
 
-$C$ : Cantidad de diarios a producir y vender por mes\
-$CONSUMO$ _$M2$ :  consumo de horas de máquina 2  por mes\
-$CANTIDAD$ _$TINTA$ : cantidad de tinta a comprar para producir diarios\
-$CANTIDAD$ _$DE$ _$TRASLADO$ _$DIARIOS$ : cantidad de traslado de diarios realizado por mes\
-$CONSUMOS$ _$DE$ _$C$ : consumo de horas de produccion por $C$ por mes \
-$COSTOS$ _$MATERIA$ _$PRIMA$ _$DIARIOS$ : costos de produccion diaria por el servicio $C$
+$C$ : Cantidad de diarios a producir y vender por mes [unidades/mes]\
+$CONSUMO$ _$M2$ :  consumo de horas de máquina 2  por mes [horas/mes]\
+$CANTIDAD$ _$TINTA$ : cantidad de tinta a comprar para producir diarios [litros/mes]\
+$CANTIDAD$ _$DE$ _$TRASLADO$ _$DIARIOS$ : cantidad de traslado de diarios realizado por mes [traslados/mes] \
+$CONSUMOS$ _$DE$ _$C$ : consumo de horas de produccion por $C$ por mes [horas/mes] \
+$COSTOS$ _$MATERIA$ _$PRIMA$ _$DIARIOS$ : costos de produccion por el servicio $C$ [$/mes]
 
 ## Constantes 
-$LIMITES$_ $PRODUCCION$ _ $C$ = Limites de produccion de servicio C\
-$PRECIO$_$TINTA$ = Precio de la tinta\
-$TINTA$ _$DIARIO$ = Cantidad de tinta de para diario\
-$PRECIO$ _$VENTA$ _$C$ = Precio de venta del servicio C\
-$LIMITE$ _$HORAS$ _$MAQUINA$ _$2$ = Limite de horas maquina\
-$PRODUCCION$ _$MAQUINA$ _$C$ = Capacidad de produccion de maquina 2 del servicio C\
-$PERSONAL$ _$NECESARIO$ _$MAQUINA$ _$2$ = Cantidad de personal necesario para la maquina 2\
-$PRODUCCION$ _$HORA$ _ $C$ = Cantidad de produccion por hora del servicio C\
-$CAPACIDAD$ _$TRASLADO$ _ $C$ = Capacidad de traslado del servicio C\
-$PRECIO$ _$TRASLADO$ _$C$ = Precio de traslado del servicio C
+$LIMITES$_ $PRODUCCION$ _ $C$ = Limites de produccion de servicio C [unidades/mes]\
+$PRECIO$_$TINTA$ = Precio de la tinta [$ /litro]\
+$TINTA$ _$DIARIO$ = Cantidad de tinta para un diario [tinta/diario]\
+$PRECIO$ _$VENTA$ _$C$ = Precio de venta del servicio C [$ /unidad]\
+$LIMITE$ _$HORAS$ _$MAQUINA$ _$2$ = Limite de horas maquina [horas/mes]\
+$PRODUCCION$ _$MAQUINA$ _$C$ = Capacidad de produccion de maquina 2 del servicio C [unidades/horas]\
+$PERSONAL$ _$NECESARIO$ _$MAQUINA$ _$2$ = Cantidad de personal necesario para la maquina 2
+$PRODUCCION$ _$HORA$ _ $C$ = Cantidad de produccion por hora del servicio C [unidades/hora]\
+$CAPACIDAD$ _$TRASLADO$ _ $C$ = Capacidad de traslado del servicio C [unidades/traslado]\
+$PRECIO$ _$TRASLADO$ _$C$ = Precio de traslado del servicio C [$/traslado]
 
 ## Funcion Objetivo
 
@@ -226,7 +226,7 @@ $PRECIO$ _$TRASLADO$ _$C$ = Precio de traslado del servicio C
  donde $COSTOS$ _$MATERIA$ _$PRIMA$ _$DIARIOS$  = 
 $PRECIO$_$TINTA$ * $CANTIDAD$ _$TINTA$
 
-## Restricciones y código modificado 
+## Restricciones 
 
 
 - $CANTIDAD$ _ $TINTA$ $=$ $producido[C]$ * $TINTA$_$DIARIO$\
@@ -270,12 +270,12 @@ claramente su respuesta.
 
 # Informe tercer caso
 ## Variables
-- $R_m$: Sobres rechazados por maquina
-- $H_{rs}$: Horas invertidas en reparacion por maquina
+- $R_m$: Sobres rechazados por maquina [sobres/maquina]
+- $H_{rs}$: Horas invertidas en reparacion por maquina [horas/maquina]
 ## Constantes
-- $C_{rs}$: Costo de reparacion sobre
-- $PR_{M1}$: Porcentaje de rechazo
-- $REP_{hr}$: Cantidad de reparacion por hora
+- $C_{rs}$: Costo de reparacion sobre [$/sobre]
+- $PR_{M1}$: Porcentaje de rechazo 
+- $REP_{hr}$: Cantidad de reparacion por hora [unidades/hora]
 ## Restricciones
 ### Consumo Maquina
 - Consumo: R_m = P_{A} * PR_{M1} 
