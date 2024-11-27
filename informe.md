@@ -291,14 +291,55 @@ claramente su respuesta.
 ![sensibilidad](caso_tres/sensibilidad2.png)
 ![produccion](caso_tres/produccion.png)
 ![porcentajes](caso_tres/porcentajes_costos.png)
-# Analisis de sensibilidad 
-   # Preguntas
- - ¿Cuánto pagaría por dos unidades más de horas maquina? Justifique claramente
-  su respuesta.
 
- - ¿Qué pasa si el coeficiente de rechazo disminuye?
+# Analisis de Sensibilidad 
+
+## ¿A cuanto comprarias 100 horas de maquina?
+Vemos que el marginal de horas maquina es de $10.157,14 y esta dentro del rango por lo que pagaria como maximo $1.015,74
+
+## ¿A cuantos venderia una unidad de hora extra?
+En este caso las horas extra estan sobrando por lo que podria venderlo a cualquier precio
+
+## ¿Conviene comprar 150 horas maquina por $1.600.000?
+Como vemos en la tabla, podemos a lo mucho hacer rendir esas 150 por $1.523.571 por lo que no seria rentable el negocio
+
+## ¿Cuánto pagaría por realizar 100.000 etiquetados mas?
+Poder aumentar cada etiquetado me aumenta el funcional 1.43$, si tuviera que hacer 100.000 unidades mas, no pagaria mas de 143.000$ para obtenerlos, porque si pago mas, estaria perdiendo 
+
+## ¿Qué  pasa  si  el  coeficiente  de  produccion de ensobrados en  el  funcional  disminuye  en  1.5$?
+El limite lim inferior del coeficiente de produccion de ensobrado es de 1.17$, al pasar este limite, lo que pasa es que el funcion objetivo cambia. 
+
+## ¿Cuánto pagaría por dos unidades más de horas maquina?
+El dual price asociado a las horas máquina (Restricción 8) es 0.1875. Entonces por cada unidad adicional de horas máquina, el beneficio incrementaría en $0.1875.
+
+Por dos unidades más de horas máquina:
+  2×0.1875=0.375
+El incremento en el beneficio sería $0.375, podria pagarse por incremento si el precio es menor o igual a 0.375-m.
+
+## ¿Qué pasa si el coeficiente de etiquetado en el funcional disminuye en $3?
 Justifique claramente su respuesta. Si considera que le falta información indicar qué
 información le falta y qué situaciones se pueden presentar.
 
- - ¿Qué pasa si aumentamos el consumo de horas invertidas en reparacion por maquina? Justifique
-claramente su respuesta.
+Como falta informacion sobre los limites de variacion del coeficiente objetivo, hay dos posibles situaciones:
+- Si la disminucion esta dentro del rango entonces el modelo sigue siendo optimo, pero el beneficio disminuye en proporcion.
+- Si excede el rango, entonces se puede generar una nueva solucion optima que afecte al plan de produccion.
+
+## ¿Qué pasa si aumentamos el precio de ensobrado de $3.20 a $5?
+
+  Como el ensobrado ya está en el máximo nivel de producción, el incremento no va a cambiar la solución actual, pero el beneficio va a aumentar. 
+  La diferencia de precio es de 5 - 3,20 = 1,80
+  Entonces el beneficio aumentaria en 240.000 (produccion actual) x 1,80 = 432.000 (lo que beneficio aumenta)
+
+## ¿Qué pasa si agregamos una demanda mínima para el producto Ensobrado de 2 unidades? 
+- CASO BASE:
+  
+No sucederia nada ya que se agrega es un servicio que se vende.
+- CASO 2: Idem
+- CASO 3: idem
+
+## ¿Qué pasa si agregamos una demanda máxima para el producto Ensobrado de 3000 unidades? ¿Y si reducimos la demanda maxima a 0?
+- CASO BASE:
+  
+El funcional incrementa en 3000 unidades * coeficiente de ensobrado por unidad, en el caso de que se reduzca la demanda maxima a cero, cambiaría el funcional aunque no se tienen valores de cuanto podria perder en dicho rango ya que es justamente el limite del rango vender 0 unidades de Ensobrado
+- CASO 2: idem 
+- CASO 3: idem
