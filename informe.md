@@ -343,3 +343,6 @@ No sucederia nada ya que se agrega es un servicio que se vende.
 El funcional incrementa en 3000 unidades * coeficiente de ensobrado por unidad, en el caso de que se reduzca la demanda maxima a cero, cambiaría el funcional aunque no se tienen valores de cuanto podria perder en dicho rango ya que es justamente el limite del rango vender 0 unidades de Ensobrado
 - CASO 2: idem 
 - CASO 3: idem
+
+## En el caso 2 ¿ Conviene comprar 57 horas de máquina 2 para aumentar la producción con el fin de obtener más ganancia por un precio de $335.730?
+La respuesta es no, ya que el valor marginal de 1 hora de máquina 2 es de 5980 pero el rango en el que ese coeficiente se mantendría y no afectaria la solución óptima es hasta 102.27 horas totales, entonces, si ya contamos con 48 horas y le agregamos 57 horas más de disponibilidad nos excederíamos del rango y reduciría su valor marginal por ende, no conviene obtener 57 horas por ese precio ya que perderíamos plata con las 2.73 horas excedentes del rango cuyo valor marginal sería inferior que el precio de compra por el que pagamos.
