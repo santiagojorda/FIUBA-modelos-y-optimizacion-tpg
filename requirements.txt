@@ -1,0 +1,4 @@
+matplotlib
+docplex
+cplex
+ipykernel
